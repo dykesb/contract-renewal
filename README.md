@@ -18,22 +18,89 @@ Empowering others to do “cool things”
 
 ## Teaching
 
-  - Transition to master-based grading (**define**) has allowed me to
-    maintain high standards and gives students multiple opportunities to
-    achieve the level of mastery that they are seeking.
+  - In graduate school while I was a teaching assistant and later a
+    faculty specialist charged with coordinating one of our introductory
+    statistics courses, consistency of material and examinations across
+    multiple sections was vital as many of us had very limited teaching
+    experience. Consistent lecture slides and automatically graded
+    homework assignments and exams helped me to focus on becoming more
+    comfortable talking in front of people and build connections with
+    students, but it also afford me time to develop clarifying
+    activities (*examples of STAT2160 slides/homework*?). At times,
+    these lecture slides/homework seemed too mechanical to me.
+  - While an assistant professor at Husson Univeristy, I began to
+    transition away from lecture-driven material delievery to using
+    guided/active lecture notes (*examples of MS132 activities*). I
+    wanted to become more of a trail guide to students rather than the
+    *keeper of knowledge* - I didn’t have all the answers and I could
+    help them figure it out. I read the revised 2005 GAISE report\[1\]
+    in graduate school and was trying to integrate the six
+    recommendations to the best of my ability (though, admittedly,
+    focusing two of these recommendations: using real data and fostering
+    active learning).
+
+<!-- end list -->
+
+  - Took part in a Faculty Learning Community facilitated by Drs. John
+    Gabrosek and Neal Rogness on Team-Based Learning (TBL) while I was a
+    visiting professor during the Winter 2018 semester. TBL is a type of
+    flipped classroom experience where students do readings and watch
+    videos outside of class, take an in-class quiz over the foundational
+    knowledge they were asked to prepare, then class time is spend
+    working on activities that extend their foundational understanding.
+    Students are placed into semester long teams for where they work
+    with each other to complete a team quiz and the in-class activities.
+    This approach felt like a natural progression from my guided notes
+    to me taking more of a trail guide role in students’ learning.
+
+  - Worked with Dr. Rogness to restructure Dr. Gabrosek’s first attempt
+    at using TBL in STA 216 (Intermediate Applied Statistics). Gained
+    emense insight into how to prepare active learning materials and
+    questions to ask as activities and assessments are being designed. I
+    really enjoyed this collaborative lesson planning because it made me
+    more aware of my own blind-spots (what things am I not aware of
+    because it has become second nature) (*examples of STA216 TBL
+    activites*). Talk about collaborative lesson planning ideas from
+    [The Carpentries](https://software-carpentry.org/lessons/) and
+    [Teach Tech
+    Together](http://teachtogether.tech/#s:process-maintainability).
+
+  - Transition to mastery-based (or specification or standards-based)
+    grading (**define**) has allowed me to maintain high standards and
+    gives students multiple opportunities to achieve the level of
+    mastery that they are seeking. Like a traditional grading system,
+    students are presented with overall course learning objectives.
+    However, in a mastery-based grading system, each assessment tasks
+    also has clearly labeled learning objectives attached to it. In
+    these assessments, students receive substantial feedback and an
+    indication of where they are currently (e.g., I use a rubric for
+    each task in my [STA 418/518 grading
+    policy](https://sta518.github.io/courses/assessment/grading/)).
+    Unlike most traditional grading systems, students are then provided
+    with opportunities to revise and resubmit most assessment tasks
+    sometimes requiring students to submit additional materials like
+    additional task items or a reflection on how the feedback aided
+    their understanding (e.g., [STA 418/518 revision and reassement
+    policy](https://sta518.github.io/courses/assessment/revision/)).
+
+  - One of my departmental mentors, Dr. John Gabrosek, introduced me to
+    Dr. John Golden from the Department of Mathematics to discuss how he
+    does various creative activities. After our initial conversation, I
+    invited Dr. Golden and his colleagues that also use a mastery-based
+    grading system (i.e., Drs. David Clark, Jon Hasenbank, Lauren
+    Keough, and Taylor Short) to hold a panel discussion with our
+    department (*include shared google doc from this discussion?*).
+
   - Encourage students to explore on their own. Recently I have realized
     that many may have never wanted to do this or had experience with
     self-exploration, so they need additional guidance along this
     process.
+
   - How can we help students to become self-motivated?
+
   - I am trying to be more intentional in the directions provided to
     students so details are presented in a concise, clear way; being
     cautious of the jargon I use and aware of my own blind-spots.
-
-Work at Husson - Taught 4/4 load along with one online 7-week course
-after developing during the first 7-weeks. Online courses were overload.
-
-### Classroom management skills
 
   - Flipped-style classroom where I provide students with readings,
     tutorials, videos to complete outside of class. Class time is then
@@ -47,9 +114,8 @@ after developing during the first 7-weeks. Online courses were overload.
     concepts. Using materials developed by Drs. Gabrosek and Rogness in
     STA 215 and STA 216 have immensly aided in this process.
 
-### Preparation and organization
-
   - Give example of STA 418/518 module prep
+    
       - Outcomes
       - Concept map
       - Readings/tutorials
@@ -72,22 +138,45 @@ have the opportunity to add items before I closed that day’s agenda
 students that were not able to actively participate could still view the
 session.
 
-### Communication
-
 Agenda/reminders
 
 Directions (especially on at-home assignments) have become more detailed
 
 Organized Bb course site. This isn’t always the most evident to me and I
-ask for student feedback as the semester progresses.
+ask for student feedback as the semester progresses. Responsive to needs
+of students and use verbal feedback to adapt Bb.
+
+Midterm evaluation process. How is this evolving? How do I use this and
+share with students? (*Show process of Google Form \> RMarkdown \>
+Report*)
+
+Peer Feedback forms (*Show process*). How is this evolving? How can I
+get more student involvement in their evaluations? Could be a learning
+journal entry.
+
+Students’ learning journals on GitHub. Can give additional feedback or
+reinforce their understanding (*show anonymized examples from Spring
+2020 STA 418/518*)
+
+Themes from LIFT evaluations. Do I still have my evaluations from
+Husson?
+
+Work at Husson
+
+  - Taught 4/4 load along with one online 7-week course after developing
+    during the first 7-weeks. Online courses were overload.
+
+### Classroom management skills
+
+### Preparation and organization
+
+### Communication
 
 ### Enthusiasm
 
 ### Knowledge
 
 ### Evaluation
-
-Mixture of set due dates and revisions/resubmits
 
 ### Availability
 
@@ -155,3 +244,12 @@ Work at Husson
 ### Activities that represent areas of significant focus
 
 ## Appendices
+
+### 
+
+1.  Aliaga, M., Cobb, G., Cuff, C., Garfield, J., Gould, R., Lock, R.,
+    Moore, T., Rossman, A., Stephenson, B., Utts, J., Velleman, P.,
+    Witmer, J. (2005). Guidelines for Assessment and Instruction in
+    Statistics Education (GAISE) College Report. American Statistical
+    Association. Online at:
+    <https://www.amstat.org/asa/files/pdfs/GAISE/2005GaiseCollege_Full.pdf>
