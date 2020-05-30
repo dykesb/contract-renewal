@@ -157,7 +157,7 @@ sta215_formative_items_long %>%
   Would allow for students/teams to be able to express themselves if this is student-driven.
   
 
-```{r sta216-bump, cache = TRUE}
+```{r sta216-bump, cache = TRUE, fig.width = 9}
 sta216_formative_items <- tribble(
   ~Item,	~F18_S01,	~F18_S03, ~F18_S05, ~W19_S01, ~W19_S02,
 "Course Organization was:",	4,	3,	7,	5,	3,
@@ -200,7 +200,7 @@ sta216_formative_items_long %>%
   scale_x_continuous(breaks = 1:(length(levels(sta216_formative_items_long$Semester))+1),
                      labels = c(levels(sta216_formative_items_long$Semester),""),
                      expand = c(0,0.05),
-                     limits = c(1, 12)) +
+                     limits = c(1, 11)) +
   theme_classic() + 
   labs(x = "Semester",
        y = "Relative Ranking",
@@ -228,10 +228,35 @@ sta216_formative_items_long %>%
 #   scale_color_manual(values = c("#0072B2", "#E69F00"))
 ```
 
+STA 216 was my first experience teaching an entire course using TBL.
+It seems that my own uncomfortableness with how to organize a TBL class was very apparent to the students and this frustrated a number of them.
 
+There were some comments about being more clear about requirements/expectations or when answering questions.
+I'm still working on how to get better at providing hints or suggestions to questions without simply giving students the right answer.
+Something I do that adds to students confusion is using terminology or jargon that students still  might not fully understand.
+(**point to sta216 take home exam from winter 2020 at an attempt for more clarity**)
+(**point to sta418/518 activities at attempt to scaffold tasks using consistent terminology**)
 
+During my mid-semester student feedback consultation with Dr. Christine Rener, we discussed ways to let students know that I was in fact helping them learn through TBL by providing a lot of directions and details in the reading and activity directions.
+We also discussed ways that I could make the clarifying mini-lectures stand out more by announcing that I was going to write something on the board to provide students time to mentally and physically switch over to taking notes.
 
+After this Fall 2018 semester, I began to focus students' attention to the reading objectives that I provided them for their assigned readings and the activity outcomes that were provided at the end of documents.
 
+Throughout the semester, a number of students expressed a desire for me to provide them with individual copies of the activities during class.
+I did my best to express my intention for providing each team with only a few copies (e.g., to help facilitate discussion between team members) and that they always had access to the files on the Blackboard course site.
+After the Fall 2018 semester I switched to using Google Docs for sharing activities.
+Part of the discussions that we have while I walk around the classroom with t
+
+There are number of comments about "self-teaching".
+While I don't necessarily view this as a criticism of me or TBL, I understand why students think this frustrating and do not intend it to be a complement.
+Talking with students early in the semester about how they might feel that they are "only" self-teaching during the semester, but let them know of the different supports they have (e.g., me in class, me during student hours, peers during class, and the tutoring center).
+(**Need to make my guiding more evident to students and perhaps be more explicit in my syllabus/first week**)
+(**Consider adding brief discussions to classes asking students how they prepare for class - say, prep check ins**)
+In my summer STA 418/518 I am doing live demonstrations where I work through similar tasks on a new dataset.
+I would like to create many shorter videos for students to refer to while they work through the material and have started to concept map topics (**upload example**).
+
+From my RStudio Instructor training, I've learned that live coding is very beneficial for students to not only see correct ways of solving problems, but that mistakes are ok and that even I make mistakes.
+When I make a mistake provides an opportunity for me to explain how I know it is a mistake and what I can do to fix it.
 
 
 ```{r sta321-bump, cache = TRUE}
@@ -305,7 +330,10 @@ sta321_formative_items_long %>%
 #   scale_color_manual(values = c("#0072B2", "#E69F00"))
 ```
 
-- There is a lot of restructuring that I would like to do with STA 321 and this was my first attempt at implementing a revision/submission policy.
+- There is a lot of restructuring that I would like to do with STA 321 and this was my first attempt at implementing a revision/submission policy which students seemed to appreciate.
+  Comments on pace - this semester had the snow week and I took over it during the second week.
+  I felt very scattered and often felt like I was only a couple of hours ahead of the students.
+  Eventually I was able to get more prepared, but I tried to be very flexible with students.
 
 ```{r sta418-bump, cache = TRUE}
 sta418_formative_items <- tribble(
@@ -379,6 +407,17 @@ sta418_formative_items_long %>%
 #   theme(legend.position = "none") +
 #   scale_color_manual(values = c("#0072B2", "#E69F00"))
 ```
+
+I really enjoy this course and there is a lot I can still do to improve it.
+I relied too much on the activities the first time teaching this course.
+
+Developing preferred teaching style: flipped (readings, videos, tutorials expected to be completed outside of class), short live demos from me scattered throughout a team activity, individual applications that reinforce and extend the activities, projects that reinforce and extend many topics.
+Heavily inspired by reading Wilson (2019)[^Wilson2019], Ambrose et al. (2010)[^Ambrose2010], and my RStudio Instructor certification course.
+
+[^Wilson2019]: Wilson, G. (2019). Teaching Tech Together: How to Make Your Lessons Work and Build a Teaching Community Around Them. CRC Press. Online at: http://teachtogether.tech/
+
+[^Ambrose2010]: Ambrose, S., Bridges, M., DiPiertro, M., Lovett, M., & Norman, M. (2019). How Learnign Works: 7 Research-Based Principles for Smart Teaching. Jossey-Bass.
+
 
 Work at Husson
 
