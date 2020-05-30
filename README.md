@@ -161,6 +161,40 @@ reinforce their understanding (*show anonymized examples from Spring
 Themes from LIFT evaluations. Do I still have my evaluations from
 Husson?
 
+Colors are consistent from between bump plots below. However, these
+colors are simply used to help make changes across sections more clear.
+Items that were repeatedly lower in rank are shaded darker in color.
+Overall, students’ seem to feel that I am *at least* “good” in these
+formative items, but there are some places that I have tried to improve
+based on their ratings and comments.
+
+In lower-division courses, I need to do a better job of making the
+course content more relevant to students. One thing I do differently in
+the upper-division courses it to incorporate more of project-based
+assessments (even in smaller homework assignments). Students regardless
+of course level appear to notice my enthusiasm for the material and I
+might be able to better use this trait to help students in these
+lower-division course see the relevance of the material. For example, I
+could do a better job setting up activities to help students.
+
+![](README_files/figure-gfm/sta215-bump-1.png)<!-- -->
+
+  - How can I make STA 215 material seem more relevant/useful? Would
+    like to include time to have students work on a project, but would
+    need to think of what material could be re-positioned. Would allow
+    for students/teams to be able to express themselves if this is
+    student-driven.
+
+![](README_files/figure-gfm/sta216-bump-1.png)<!-- -->
+
+![](README_files/figure-gfm/sta321-bump-1.png)<!-- -->
+
+  - There is a lot of restructuring that I would like to do with STA 321
+    and this was my first attempt at implementing a revision/submission
+    policy.
+
+![](README_files/figure-gfm/sta418-bump-1.png)<!-- -->
+
 Work at Husson
 
   - Taught 4/4 load along with one online 7-week course after developing

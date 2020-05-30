@@ -3,6 +3,13 @@ title: "Contract Renewal Statement"
 output: github_document
 ---
 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+library(tidyverse)
+library(ggbump)
+```
+
 ## Introduction
 
 - I was granted one year towards tenure when I was hired in 2018. I will refer to relevant activities and achievements from my time at Husson University within the College Science and Humanities.
@@ -61,6 +68,317 @@ Students' learning journals on GitHub. Can give additional feedback or reinforce
 
 Themes from LIFT evaluations. Do I still have my evaluations from Husson?
 
+Colors are consistent from between bump plots below. However, these colors are simply used to help make changes across sections more clear.
+Items that were repeatedly lower in rank are shaded darker in color.
+Overall, students' seem to feel that I am *at least* "good" in these formative items, but there are some places that I have tried to improve based on their ratings and comments.
+
+In lower-division courses, I need to do a better job of making the course content more relevant to students.
+One thing I do differently in the upper-division courses it to incorporate more of project-based assessments (even in smaller homework assignments).
+Students regardless of course level appear to notice my enthusiasm for the material and I might be able to better use this trait to help students in these lower-division course see the relevance of the material.
+For example, I could do a better job setting up activities to help students.
+
+```{r sta215-bump, cache = TRUE}
+
+sta215_formative_items <- tribble(
+  ~Item,	~W19,	~S19,	~F19,
+"Course Organization was:",	3,	6,	3,
+"Explanations by instructor were:",	6,	7,	14,
+"Instructor's ability to present alternative explanations when needed was:",	2,	8,	13,
+"Instructor's use of examples and illustrations was:",	8,	13,	4,
+"Quality of questions or problems raised by the instructor was:",	7,	15,	9,
+"Student confidence in instructor's knowledge was:",	10,	2,	6,
+"Instructor's enthusiasm was:",	1,	1,	2,
+"Encouragement given students to express themselves was:",	11,	16,	15,
+"Answers to student questions were:",	12,	11,	10,
+"Availability of extra help when needed was:",	16,	9,	5,
+"Use of class time was:",	13,	5,	16,
+"Instructor's interest in whether students learned was:",	14,	3,	7,
+"Amount you learned in the course was:",	4,	14,	12,
+"Relevance and usefulness of course content were:",	17,	17,	17,
+"Evaluative and grading techniques (test, papers, projects, etc.) were:",	15,	10,	8,
+"Reasonableness of assigned work was:",	9,	12,	11,
+"Clarity of student responsibilities and requirements was:",	5,	4,	1,
+)
+
+sta215_formative_items <- sta215_formative_items %>% 
+  mutate(blank = NA)
+
+sta215_formative_items_long <- sta215_formative_items %>% 
+  mutate(Item = factor(Item, levels = sta215_formative_items$Item)) %>% 
+  pivot_longer(cols = -Item, names_to = "Semester", values_to = "Ranking") %>% 
+  mutate(Semester = factor(Semester, levels = c("W19", "S19", "F19")),
+         Bottom = if_else(Ranking > 10, "Yes", "No"))
+
+
+sta215_formative_items_long %>%
+  ggplot(aes(x = as.numeric(Semester), y = Ranking, group = Item, color = Item, label = Item)) +
+  geom_bump(size = 2, alpha = 0.3) +
+  scale_y_reverse(breaks = 1:17, labels = 1:17) +
+  geom_bump(data = sta215_formative_items_long %>% filter(Ranking > 10),
+            aes(x = as.numeric(Semester), y = Ranking, group = Item, color = Item),
+            size = 2, inherit.aes = FALSE) +
+  geom_text(sta215_formative_items_long %>% filter(Semester == "F19"), 
+            mapping = aes(x = as.numeric(Semester) + 0.1, y = Ranking), hjust = 0) +
+  scale_x_continuous(breaks = 1:(length(levels(sta215_formative_items_long$Semester))+1),
+                     labels = c(levels(sta215_formative_items_long$Semester),""),
+                     expand = c(0,0.05),
+                     limits = c(1, 12)) +
+  theme_classic() + 
+  labs(x = "Semester",
+       y = "Relative Ranking",
+       title = "Formative Items",
+       subtitle = "STA 215") +
+  theme(legend.position = "none")
+
+# sta215_formative_items_long %>% 
+#   ggplot(aes(x = as.numeric(Semester), y = Ranking, group = Item, label = Item, color = Bottom)) + 
+#   geom_line() +
+#   geom_text(sta215_formative_items_long %>% filter(Semester == "F19"), 
+#             mapping = aes(x = as.numeric(Semester) + 0.1, y = Ranking), hjust = 0) +
+#   scale_x_continuous(breaks = 1:4,
+#                      labels = c(levels(sta215_formative_items_long$Semester),""),
+#                      expand = c(0,0.05),
+#                      limits = c(1, 12)) +
+#   scale_y_continuous(breaks = -1:-17,
+#                      labels = 1:17) +
+#   scale_y_reverse() +
+#   theme_classic() + 
+#   labs(x = "Semseter",
+#        y = "Relative Ranking",
+#        title = "Formative Items",
+#        subtitle = "STA 215") +
+#   theme(legend.position = "none") +
+#   scale_color_manual(values = c("#0072B2", "#E69F00"))
+
+```
+
+- How can I make STA 215 material seem more relevant/useful? 
+  Would like to include time to have students work on a project, but would need to think of what material could be re-positioned.
+  Would allow for students/teams to be able to express themselves if this is student-driven.
+  
+
+```{r sta216-bump, cache = TRUE}
+sta216_formative_items <- tribble(
+  ~Item,	~F18_S01,	~F18_S03, ~F18_S05, ~W19_S01, ~W19_S02,
+"Course Organization was:",	4,	3,	7,	5,	3,
+"Explanations by instructor were:",	8,	16,	12,	12,	7,
+"Instructor's ability to present alternative explanations when needed was:",	10,	13,	5,	13,	6,
+"Instructor's use of examples and illustrations was:",	16,	12,	13,	16,	11,
+"Quality of questions or problems raised by the instructor was:",	7,	10,	16,	7,	10,
+"Student confidence in instructor's knowledge was:",	3,	4,	6,	14,	9,
+"Instructor's enthusiasm was:",	5,	2,	2,	1,	8,
+"Encouragement given students to express themselves was:",	14,	5,	8,	6,	2,
+"Answers to student questions were:",	9,	17,	17,	15,	5,
+"Availability of extra help when needed was:",	1,	15,	1,	3,	1,
+"Use of class time was:",	12,	6,	3,	8,	17,
+"Instructor's interest in whether students learned was:",	17,	9,	14,	11,	14,
+"Amount you learned in the course was:",	15,	14,	11,	17,	15,
+"Relevance and usefulness of course content were:",	13,	7,	15,	4,	12,
+"Evaluative and grading techniques (test, papers, projects, etc.) were:",	11,	11,	9,	10,	13,
+"Reasonableness of assigned work was:",	2,	8,	10,	9,	16,
+"Clarity of student responsibilities and requirements was:",	6,	1,	4,	2,	4,
+)
+
+sta216_formative_items <- sta216_formative_items %>% 
+  mutate(blank = NA)
+
+sta216_formative_items_long <- sta216_formative_items %>% 
+  mutate(Item = factor(Item, levels = sta216_formative_items$Item)) %>% 
+  pivot_longer(cols = -Item, names_to = "Semester", values_to = "Ranking") %>% 
+  mutate(Semester = factor(Semester, levels = c("F18_S01", "F18_S03", "F18_S05", "W19_S01", "W19_S02")),
+         Bottom = if_else(Ranking > 10, "Yes", "No"))
+
+sta216_formative_items_long %>%
+  ggplot(aes(x = as.numeric(Semester), y = Ranking, group = Item, color = Item, label = Item)) +
+  geom_bump(size = 2, alpha = 0.3) +
+  scale_y_reverse(breaks = 1:17, labels = 1:17) +
+  geom_bump(data = sta216_formative_items_long %>% filter(Ranking > 10),
+            aes(x = as.numeric(Semester), y = Ranking, group = Item, color = Item),
+            size = 2, inherit.aes = FALSE) +
+  geom_text(sta216_formative_items_long %>% filter(Semester == "W19_S02"), 
+            mapping = aes(x = as.numeric(Semester) + 0.1, y = Ranking), hjust = 0) +
+  scale_x_continuous(breaks = 1:(length(levels(sta216_formative_items_long$Semester))+1),
+                     labels = c(levels(sta216_formative_items_long$Semester),""),
+                     expand = c(0,0.05),
+                     limits = c(1, 12)) +
+  theme_classic() + 
+  labs(x = "Semester",
+       y = "Relative Ranking",
+       title = "Formative Items",
+       subtitle = "STA 216") +
+  theme(legend.position = "none")
+
+# sta216_formative_items_long %>% 
+#   ggplot(aes(x = as.numeric(Semester), y = -Ranking, group = Item, label = Item, color = Bottom)) + 
+#   geom_line() +
+#   geom_text(sta216_formative_items_long %>% filter(Semester == "W19_S02"), 
+#             mapping = aes(x = as.numeric(Semester) + 0.1, y = -Ranking), hjust = 0) +
+#   scale_x_continuous(breaks = 1:6,
+#                      labels = c(levels(sta216_formative_items_long$Semester),""),
+#                      expand = c(0,0.05),
+#                      limits = c(1, 16)) +
+#   scale_y_continuous(breaks = -1:-17,
+#                      labels = 1:17) +
+#   theme_classic() + 
+#   labs(x = "Semseter",
+#        y = "Relative Ranking",
+#        title = "Formative Items",
+#        subtitle = "STA 216") +
+#   theme(legend.position = "none") +
+#   scale_color_manual(values = c("#0072B2", "#E69F00"))
+```
+
+
+
+
+
+
+
+```{r sta321-bump, cache = TRUE}
+sta321_formative_items <- tribble(
+  ~Item,	~W19,
+"Course Organization was:",	17,
+"Explanations by instructor were:",	4,
+"Instructor's ability to present alternative explanations when needed was:",	8,
+"Instructor's use of examples and illustrations was:",	12,
+"Quality of questions or problems raised by the instructor was:",	11,
+"Student confidence in instructor's knowledge was:",	10,
+"Instructor's enthusiasm was:",	2,
+"Encouragement given students to express themselves was:",	3,
+"Answers to student questions were:",	9,
+"Availability of extra help when needed was:",	5,
+"Use of class time was:",	14,
+"Instructor's interest in whether students learned was:",	6,
+"Amount you learned in the course was:",	7,
+"Relevance and usefulness of course content were:",	1,
+"Evaluative and grading techniques (test, papers, projects, etc.) were:",	13,
+"Reasonableness of assigned work was:",	15,
+"Clarity of student responsibilities and requirements was:",	16,
+)
+
+sta321_formative_items <- sta321_formative_items %>% 
+  mutate(blank = NA)
+
+sta321_formative_items_long <- sta321_formative_items %>% 
+  mutate(Item = factor(Item, levels = sta321_formative_items$Item)) %>% 
+  pivot_longer(cols = -Item, names_to = "Semester", values_to = "Ranking") %>% 
+  mutate(Semester = factor(Semester, levels = c("W19")),
+         Bottom = if_else(Ranking > 10, "Yes", "No"))
+
+sta321_formative_items_long %>%
+  ggplot(aes(x = as.numeric(Semester), y = Ranking, group = Item, color = Item, label = Item)) +
+  geom_point(size = 2, alpha = 0.3) +
+  scale_y_reverse(breaks = 1:17, labels = 1:17) +
+  geom_point(data = sta321_formative_items_long %>% filter(Ranking > 10),
+            aes(x = as.numeric(Semester), y = Ranking, group = Item, color = Item),
+            size = 2, inherit.aes = FALSE) +
+  geom_text(sta321_formative_items_long %>% filter(Semester == "W19"), 
+            mapping = aes(x = as.numeric(Semester) + 0.1, y = Ranking), hjust = 0) +
+  scale_x_continuous(breaks = 1:(length(levels(sta321_formative_items_long$Semester))+1),
+                     labels = c(levels(sta321_formative_items_long$Semester),""),
+                     expand = c(0,0.05),
+                     limits = c(1, 12)) +
+  theme_classic() + 
+  labs(x = "Semester",
+       y = "Relative Ranking",
+       title = "Formative Items",
+       subtitle = "STA 321") +
+  theme(legend.position = "none")
+
+# sta321_formative_items_long %>% 
+#   ggplot(aes(x = as.numeric(Semester), y = -Ranking, label = Item, color = Bottom)) + 
+#   geom_point() +
+#   geom_text(sta321_formative_items_long %>% filter(Semester == "W19"), 
+#             mapping = aes(x = as.numeric(Semester) + 0.1, y = -Ranking), hjust = 0) +
+#   scale_x_continuous(breaks = 1:2,
+#                      labels = c(levels(sta321_formative_items_long$Semester),""),
+#                      expand = c(0,0.05),
+#                      limits = c(1, 1.5)) +
+#   scale_y_continuous(breaks = -1:-17,
+#                      labels = 1:17) +
+#   theme_classic() + 
+#   labs(x = "Semseter",
+#        y = "Relative Ranking",
+#        title = "Formative Items",
+#        subtitle = "STA 321") +
+#   theme(legend.position = "none") +
+#   scale_color_manual(values = c("#0072B2", "#E69F00"))
+```
+
+- There is a lot of restructuring that I would like to do with STA 321 and this was my first attempt at implementing a revision/submission policy.
+
+```{r sta418-bump, cache = TRUE}
+sta418_formative_items <- tribble(
+  ~Item,	~F19_S01, ~F19_S02,
+"Course Organization was:",	4,	5,
+"Explanations by instructor were:",	16,	9,
+"Instructor's ability to present alternative explanations when needed was:",	6,	6,
+"Instructor's use of examples and illustrations was:",	8,	16,
+"Quality of questions or problems raised by the instructor was:",	14,	14,
+"Student confidence in instructor's knowledge was:",	5,	11,
+"Instructor's enthusiasm was:",	7,	3,
+"Encouragement given students to express themselves was:",	2,	1,
+"Answers to student questions were:",	13,	13,
+"Availability of extra help when needed was:",	9,	7,
+"Use of class time was:",	11,	12,
+"Instructor's interest in whether students learned was:",	12,	10,
+"Amount you learned in the course was:",	3,	4,
+"Relevance and usefulness of course content were:",	1,	2,
+"Evaluative and grading techniques (test, papers, projects, etc.) were:",	15,	8,
+"Reasonableness of assigned work was:",	17,	17,
+"Clarity of student responsibilities and requirements was:",	10,	15,
+
+)
+
+sta418_formative_items <- sta418_formative_items %>% 
+  mutate(blank = NA)
+
+sta418_formative_items_long <- sta418_formative_items %>% 
+  mutate(Item = factor(Item, levels = sta418_formative_items$Item)) %>% 
+  pivot_longer(cols = -Item, names_to = "Semester", values_to = "Ranking") %>% 
+  mutate(Semester = factor(Semester, levels = c("F19_S01","F19_S02")),
+         Bottom = if_else(Ranking > 10, "Yes", "No"))
+
+sta418_formative_items_long %>%
+  ggplot(aes(x = as.numeric(Semester), y = Ranking, group = Item, color = Item, label = Item)) +
+  geom_bump(size = 2, alpha = 0.3) +
+  scale_y_reverse(breaks = 1:17, labels = 1:17) +
+  geom_bump(data = sta418_formative_items_long %>% filter(Ranking > 10),
+            aes(x = as.numeric(Semester), y = Ranking, group = Item, color = Item),
+            size = 2, inherit.aes = FALSE) +
+  geom_text(sta418_formative_items_long %>% filter(Semester == "F19_S02"), 
+            mapping = aes(x = as.numeric(Semester) + 0.1, y = Ranking), hjust = 0) +
+  scale_x_continuous(breaks = 1:(length(levels(sta418_formative_items_long$Semester))+1),
+                     labels = c(levels(sta418_formative_items_long$Semester),""),
+                     expand = c(0, 0.05),
+                     limits = c(1, 12)) +
+  theme_classic() + 
+  labs(x = "Semester",
+       y = "Relative Ranking",
+       title = "Formative Items",
+       subtitle = "STA 418/518") +
+  theme(legend.position = "none")
+
+
+# sta418_formative_items_long %>% 
+#   ggplot(aes(x = as.numeric(Semester), y = -Ranking, group = Item, label = Item, color = Bottom)) + 
+#   geom_line() +
+#   geom_text(sta418_formative_items_long %>% filter(Semester == "F19_S02"), 
+#             mapping = aes(x = as.numeric(Semester) + 0.1, y = -Ranking), hjust = 0) +
+#   scale_x_continuous(breaks = 1:3,
+#                      labels = c(levels(sta418_formative_items_long$Semester),""),
+#                      expand = c(0,0.05),
+#                      limits = c(1, 10)) +
+#   scale_y_continuous(breaks = -1:-17,
+#                      labels = 1:17) +
+#   theme_classic() + 
+#   labs(x = "Semseter",
+#        y = "Relative Ranking",
+#        title = "Formative Items",
+#        subtitle = "STA 418/518") +
+#   theme(legend.position = "none") +
+#   scale_color_manual(values = c("#0072B2", "#E69F00"))
+```
 
 Work at Husson
 
@@ -86,7 +404,6 @@ Work at Husson
 ### Flexibility and resourcefulness in teaching
 
 ### Dedication to students
-
 
 ## Scholarly activity
 
