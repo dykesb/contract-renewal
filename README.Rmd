@@ -12,26 +12,75 @@ library(ggbump)
 
 ## Introduction
 
-- I was granted one year towards tenure when I was hired in 2018. I will refer to relevant activities and achievements from my time at Husson University within the College Science and Humanities.
+I aim to empower others to do "cool things".
+As a faculty member in the Department of Statistics, this means that I get to do so by providing space where others can explore their interests, sharing my interests, and showing how Statistics can strengthen others' contributions to their own field and society.
+In this statement, I will describe how I am progressing towards meeting the standards for effective teaching, scholarly/creative activity, and service for tenure and promotion.
 
-Empowering others to do "cool things"
+Please note that I was granted one year towards tenure when I was hired into this position in 2018.
+Therefore, I will refer to relevant activities from my time at Husson University within the College Science and Humanities.
 
-- Teaching
-  - Help others find what does or does not interest them 
-- Scholarly activity
-  - How I find my interest
-- Service
-  - Provide/create spaces where others can explore their interests
+*Description of how supporting documents are available (make this a {bookdown} site that can be downloaded as a PDF?)*
 
 ## Teaching
 
+I love to go hiking with my Great Dane, Odin.
+Over the years we have discovered that he is exceptionally talented at scaling up steep inclines despite his long, awkward frame.
+One of my favorite times that we went hiking was in Maine.
+We had spent all morning gradually making up it up Bernard Mountain in Acadia National Park and on our descent, we came to a what seemed like a six-foot drop.
+Despite his best attempt and my coaxing, he had met his match.
+It was simply too large of a drop for him so we headed back the way we came.
+Despite extending our hike duration substantially, I was still so impressed by the climbing that he had already done.
+In teaching, I view myself as a trail guide where students and I are on this path of learning together.
+*Make connection to classroom instruction (I know where we need to go, but I can be somewhat flexible in the path that we take), individual mentoring, and advising (encourage students to take safe risks, but be ready to find an alternate path).*
+
+I believe that a thoughtful and intentional plan of where we are going helps to provide clarity for the students and myself as we progress along the path.
+When I started my tenure-track position at GVSU, I was fortunate to have been assigned to teach STA 216 (a second course in statistics).
+I had never taught this material before, but was excited to teach a course that included material beyond the introductory material.
+However, I was not sure of a best path to take and needed to seek out guidance.
+Beginning with materials provided by Dr. John Gabrosek (along with his reflections on what went well and what he would improve), Dr. Neal Rogness and I carefully designing the course materials and assignments.
+*Talk about collaborative lesson planning ideas from [The Carpentries](https://software-carpentry.org/lessons/) and [Teach Tech Together](http://teachtogether.tech/#s:process-maintainability) - building upon practices of experienced educators*
+I have not yet practiced this level of collaborative design in other courses that I have taught at GVSU, but my colleagues have always been more than willing to share their materials and reflections for which I am extremely grateful.
+
+Collaboratively designing STA 216 really helped me to become more aware of how to deconstruct the goals of a lesson and check questions or items for clarity.
+*Desire to make SAS programming integrated more throughout STA 216 so I moved data wrangling (define) earlier in the semester as some students commented on unease with their abilities with SAS.*
+*Seemed cludgy as we progressed through data wrangling by it self and later learned of minimal manual (only showing enough to complete the needed task, but providing suggestions for self-exploration).*
+As I continue to research ways to design active learning materials and how to ask questions to facilitate different levels of thinking (*awkward - rework*), I became more aware of my blind-spots (i.e., terms, processes, or statements that I use because I have a different level of experience with the content than students).
+*For example, I have a lot of experience working with computers and programming languages to handle data wrangling, but many students are still just trying to...*
+
+During the second half of the Winter 2020 semester (the transition to remote instruction), I tried to focus on my blind-spots in written instructions.
+
+*I have since learned, through the Pew FTLC Inclusive Excellence Teaching Institute, that transparency in instruction and directions can help set all students up for success, not just those that feel comfortable enough to ask for clarification.*
+*I want students to feel that they can come and ask me questions, but I cannot force them to - I can, however, adapt my materials to be more comprehensive.*
+
+I took part in a Faculty Learning Community facilitated by Drs. Gabrosek and Rogness on Team-Based Learning (TBL) while I was a visiting professor at GVSU.
+TBL is a type of flipped classroom experience where students do readings and ways of preparatory work outside of class, take an in-class quiz over the foundational knowledge they were asked to prepare, and then class time is spend working on activities that extend their foundational understanding.
+Students are placed into semester long teams for where they work with each other to complete a team quiz and the in-class activities.
+This approach felt like a natural progression from my guided notes to me taking more of a trail guide role in students' learning.
+Sometimes, students need time to go explore  on their own with a planned time to reconvene and share their findings.
+
+*Discuss students' feelings of "self teaching" - I need to include provide a better discussion at the start of the semester and intentionally remind students of my reasoning throughout the semester explaining why I am using a flipped classroom*
+*My reasons include ...*
+
+
+
+****
+
+- I haven't been able to get students as excited when I put on my "teaching boots" as Odin when he sees me reach for my hiking boots.
+However, something something I bring a level of excitement and energy to the course something something.
+
+- In assisting students to explore their own interests, I hope to also show how Statistics can strengthen their contributions to their field and society.
+
+- I tell my students that it took me several changes in major (five to be exact) to determine a field where I truly felt at home. 
+
+- I joke with students in the STA 215 sections that I teach that while it would be great if all of them decided to pick up a minor in statistics, I know that what is interesting to me might very well be uninteresting to them. However, I ask that they approach the content with an open mind and willingness to work and grow so that they leave with a better appreciation of how statistics can be useful for them.
+
+
 - In graduate school while I was a teaching assistant and later a faculty specialist charged with coordinating one of our introductory statistics courses, consistency of material and examinations across multiple sections was vital as many of us had very limited teaching experience. Consistent lecture slides and automatically graded homework assignments and exams helped me to focus on becoming more comfortable talking in front of people and build connections with students, but it also afford me time to develop clarifying activities (*examples of STAT2160 slides/homework*?). At times, these lecture slides/homework seemed too mechanical to me.
-- While an assistant professor at Husson Univeristy, I began to transition away from lecture-driven material delievery to using guided/active lecture notes (*examples of MS132 activities*). I wanted to become more of a trail guide to students rather than the *keeper of knowledge* - I didn't have all the answers and I could help them figure it out. I read the revised 2005 GAISE report[^GAISE2005] in graduate school and was trying to integrate the six recommendations to the best of my ability (though, admittedly, focusing two of these recommendations: using real data and fostering active learning).
+- While an assistant professor at Husson University, I began to transition away from lecture-driven material delivery to using guided/active lecture notes (*examples of MS132 activities*). I wanted to become more of a trail guide to students rather than the *keeper of knowledge* - I didn't have all the answers and I could help them figure it out. I read the revised 2005 GAISE report[^GAISE2005] in graduate school and was trying to integrate the six recommendations to the best of my ability (though, admittedly, focusing two of these recommendations: using real data and fostering active learning).
 
 [^GAISE2005]: Aliaga, M., Cobb, G., Cuff, C., Garfield, J., Gould, R., Lock, R., Moore, T., Rossman, A., Stephenson, B., Utts, J., Velleman, P., Witmer, J. (2005). Guidelines for Assessment and Instruction in Statistics Education (GAISE) College Report. American Statistical Association. Online at: https://www.amstat.org/asa/files/pdfs/GAISE/2005GaiseCollege_Full.pdf
 
-- Took part in a Faculty Learning Community facilitated by Drs. John Gabrosek and Neal Rogness on Team-Based Learning (TBL) while I was a visiting professor during the Winter 2018 semester. TBL is a type of flipped classroom experience where students do readings and watch videos outside of class, take an in-class quiz over the foundational knowledge they were asked to prepare, then class time is spend working on activities that extend their foundational understanding. Students are placed into semester long teams for where they work with each other to complete a team quiz and the in-class activities. This approach felt like a natural progression from my guided notes to me taking more of a trail guide role in students' learning.
-- Worked with Dr. Rogness to restructure Dr. Gabrosek's first attempt at using TBL in STA 216 (Intermediate Applied Statistics). Gained emense insight into how to prepare active learning materials and questions to ask as activities and assessments are being designed. I really enjoyed this collaborative lesson planning because it made me more aware of my own blind-spots (what things am I not aware of because it has become second nature) (*examples of STA216 TBL activites*). Talk about collaborative lesson planning ideas from [The Carpentries](https://software-carpentry.org/lessons/) and [Teach Tech Together](http://teachtogether.tech/#s:process-maintainability).
+
 
 - Transition to mastery-based (or specification or standards-based) grading (**define**) has allowed me to maintain high standards and gives students multiple opportunities to achieve the level of mastery that they are seeking. Like a traditional grading system, students are presented with overall course learning objectives. However, in a mastery-based grading system, each assessment tasks also has clearly labeled learning objectives attached to it. In these assessments, students receive substantial feedback and an indication of where they are currently (e.g., I use a rubric for each task in my [STA 418/518 grading policy](https://sta518.github.io/courses/assessment/grading/)). Unlike most traditional grading systems, students are then provided with opportunities to revise and resubmit most assessment tasks sometimes requiring students to submit additional materials like additional task items or a reflection on how the feedback aided their understanding (e.g., [STA 418/518 revision and reassement policy](https://sta518.github.io/courses/assessment/revision/)). 
 - One of my departmental mentors, Dr. John Gabrosek, introduced me to Dr. John Golden from the Department of Mathematics to discuss how he does various creative activities. After our initial conversation, I invited Dr. Golden and his colleagues that also use a mastery-based grading system (i.e., Drs. David Clark, Jon Hasenbank, Lauren Keough, and Taylor Short) to hold a panel discussion with our department (*include shared google doc from this discussion?*).
