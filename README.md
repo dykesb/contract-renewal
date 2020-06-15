@@ -17,7 +17,8 @@ activities from my time at Husson University within the College Science
 and Humanities.
 
 *Description of how supporting documents are available (make this a
-{bookdown} site that can be downloaded as a PDF?)*
+{bookdown} site that can be downloaded as a PDF? This will make `\ref{}`
+available.}*
 
 ## Teaching
 
@@ -35,19 +36,20 @@ students and I are on this path of learning together. *Make connection
 to classroom instruction (I know where we need to go, but I can be
 somewhat flexible in the path that we take), individual mentoring, and
 advising (encourage students to take safe risks, but be ready to find an
-alternate path).*
+alternate path).* I believe that a thoughtful and intentional plan of
+where we are going as helps to provide clarity for the students and
+myself as we progress along the path.
 
-I believe that a thoughtful and intentional plan of where we are going
-helps to provide clarity for the students and myself as we progress
-along the path. When I started my tenure-track position at GVSU, I was
-fortunate to have been assigned to teach STA 216 (a second course in
-statistics). I had never taught this material before, but was excited to
-teach a course that included material beyond the introductory material.
-However, I was not sure of a best path to take and needed to seek out
-guidance. Beginning with materials provided by Dr. John Gabrosek (along
-with his reflections on what went well and what he would improve),
-Dr. Neal Rogness and I carefully designing the course materials and
-assignments. *Talk about collaborative lesson planning ideas from [The
+When I started my tenure-track position at GVSU, I was fortunate to have
+been assigned three sections of STA 216 (a second course in statistics).
+I had never taught this material before and was not sure of a best path
+to take, but I received many valuable resources from colleagues.
+Dr. John Gabrosek shared his materials along with his reflections on
+what went well and what he would improve with Dr. Neal Rogness and I.
+Together, Dr. Rogness and I continued developing Dr. Gabrosek’s
+team-based learning (TBL - flipped classroom experience that I will
+expand upon shortly) materials and assignments. *Talk about
+collaborative lesson planning ideas from [The
 Carpentries](https://software-carpentry.org/lessons/) and [Teach Tech
 Together](http://teachtogether.tech/#s:process-maintainability) -
 building upon practices of experienced educators* I have not yet
@@ -58,23 +60,60 @@ extremely grateful.
 
 Collaboratively designing STA 216 really helped me to become more aware
 of how to deconstruct the goals of a lesson and check questions or items
-for clarity. *Desire to make SAS programming integrated more throughout
-STA 216 so I moved data wrangling (define) earlier in the semester as
-some students commented on unease with their abilities with SAS.*
-*Seemed cludgy as we progressed through data wrangling by it self and
-later learned of minimal manual (only showing enough to complete the
-needed task, but providing suggestions for self-exploration).* As I
-continue to research ways to design active learning materials and how to
-ask questions to facilitate different levels of thinking (*awkward -
-rework*), I became more aware of my blind-spots (i.e., terms, processes,
-or statements that I use because I have a different level of experience
-with the content than students). *For example, I have a lot of
-experience working with computers and programming languages to handle
-data wrangling, but many students are still just trying to…*
+for clarity. As I continue to research ways to design active learning
+materials and how to ask questions to facilitate different levels of
+thinking (*awkward - rework*), I became more aware of my blind-spots
+(i.e., terms, processes, or statements that I use because I have a
+different level of experience with the content than students). *For
+example, I have a lot of experience working with computers and
+programming languages to handle data wrangling, but while many students
+are simply trying to understand the terminology and notation that I am
+using.* Student commented during the the Fall 2018 semester and
+afterwards in the course evaluations that they had trepidation with
+learning SAS (a statistical analysis software suite) for a variety of
+reasons. These student’s comments paired with my own desire to integrate
+SAS more throughout the course led me to create materials that
+introduced some SAS basics (e.g., data filtering, numerical summaries,
+and data visualizations) to use early in the Winter 2019 semester and
+continue to build on these throughout the semester (*link STA 216
+Activities*).
 
-During the second half of the Winter 2020 semester (the transition to
-remote instruction), I tried to focus on my blind-spots in written
-instructions.
+While the relative number of comments critiquing SAS decreased on
+student evaluations in the Winter 2019 semester, assessment questions
+still had a high number of fully or partially incorrect responses (*get
+numbers from past exams if I still have - item analysis has 90.7% of
+students missing points on Exam 1 Quesion 21.*) I felt that I went too
+far the other direction - introducing too much SAS too early. During the
+Winter 2019 semester I was introduced to the idea of a minimal manual
+(i.e., only showing enough detail so that students can complete the
+needed task, but providing suggestions or resources for further
+exploration) from communications with Dr. Mark Guzdial of the University
+of Michigan’s School of Information. With instructing SAS to produce
+various statistical results, I can see how it is confusing to students
+especially after their last experience with a statistical analysis tool
+was through the point-and-click interface of SPSS. With my next
+opportunity teaching STA 216, I focused students attention on values
+that change and values that stay the same in a SAS code chunk. For
+example, to calculate the summary statistics for a `variable` within
+some `dataset` we could use the SAS code chunk on the left in Figure
+`\ref{fig:generic-sas}`. I spent time in class highlighting the portions
+of code that changed by drawing code that I projected on the whiteboard
+like shown on the right. After we finished an activity, I then randomly
+assigned a group of students to be responsible for adding any new code
+that we covered to a shared Google Document (*link to Google doc*).
+
+![SAS code comparison with generic code (left) and fill-in-blank code
+(right)](README_files/figure-gfm/sas-means-1.png)
+
+These fill-in-the-blank coding exercises great because you can make them
+more difficult by removing additional components to while assessing the
+different components of the syntax (e.g., remove all function/procedure
+terms). During the second half of the Winter 2020 semester (the
+transition to remote instruction), I also learned that Blackboard has a
+fill-in-the-blank question type that you can replicate these type of
+quick assessment questions. *I plan to integrate these questions earlier
+in STA 216 this coming semester and will directly ask students how they
+like them during my midterm evaluation*
 
 *I have since learned, through the Pew FTLC Inclusive Excellence
 Teaching Institute, that transparency in instruction and directions can
@@ -86,8 +125,8 @@ can, however, adapt my materials to be more comprehensive.*
 I took part in a Faculty Learning Community facilitated by Drs. Gabrosek
 and Rogness on Team-Based Learning (TBL) while I was a visiting
 professor at GVSU. TBL is a type of flipped classroom experience where
-students do readings and ways of preparatory work outside of class, take
-an in-class quiz over the foundational knowledge they were asked to
+students do readings and other preparatory work prior to class meetings,
+take an in-class quiz over the foundational knowledge they were asked to
 prepare, and then class time is spend working on activities that extend
 their foundational understanding. Students are placed into semester long
 teams for where they work with each other to complete a team quiz and
